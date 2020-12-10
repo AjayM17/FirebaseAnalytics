@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">FirebaseAnalytics</string>
+    <string name="title_activity_main">FirebaseAnalytics</string>
+    <string name="package_name">com.firebase_analytics</string>
+    <string name="custom_url_scheme">com.firebase_analytics</string>
+</resources>

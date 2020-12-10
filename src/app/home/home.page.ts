@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AnalyticsService } from '../services/analytics.service'
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  PAGE = "HOME"
 
+  constructor(private analyticsService : AnalyticsService) {}
+
+  logEvent(event_name){
+    this.analyticsService.logEvent(event_name , this.PAGE)
+  }
 }
